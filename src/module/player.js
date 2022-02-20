@@ -1,6 +1,5 @@
 const express = require("express"),
     yts = require("yt-search"),
-    ffmpeg = require("fluent-ffmpeg"),
     ytdl = require("ytdl-core"),
     fs = require("fs-extra"),
     path = require("path");

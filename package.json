@@ -11,8 +11,6 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.2",
-        "ffmpeg": "^0.0.4",
-        "fluent-ffmpeg": "^2.1.2",
         "fs-extra": "^10.0.0",
         "http": "^0.0.1-security",
         "path": "^0.12.7",
