@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+        <title>MP3 Live Stream</title>
+        <link rel="stylesheet" href="css/mp3.css" />
+    </head>
+    <body>
+        <audio>브라우저가 audio를 지원하지 않습니다.</audio>
+        <div class="page">
+            <div class="header">
+                <div class="home-logo">소리</div>
+                <div class="user-profile-container">
+                    <div class="user-name">유저</div>
+                    <div class="user-profile"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="search-page">
+                    <div class="search-bar">
+                        <input class="search-typer" type="text" />
+                        <div class="search-btn">검색</div>
+                    </div>
+                    <div class="search-result-container"></div>
+                </div>
+            </div>
+            <div class="play-bar">
+                <div class="played"></div>
+                <div class="circle" draggable="true"></div>
+            </div>
+            <div class="footer">
+                <div class="music-info-container">
+                    <div class="music-title">재생 중인 노래</div>
+                    <div class="music-author">작가</div>
+                </div>
+                <div class="controller-container">
+                    <div class="prev-btn"></div>
+                    <div class="play-btn"></div>
+                    <div class="next-btn"></div>
+                    <div class="list-btn"></div>
+                </div>
+            </div>
+        </div>
+        <template id="searchPage">
+            <div class="search-page">
+                <div class="search-bar">
+                    <input class="search-typer" type="text" />
+                    <div class="search-btn">검색</div>
+                </div>
+                <div class="search-result-container">
+                    <div class="search-result"></div>
+                </div>
+            </div>
+        </template>
+        <template id="searchResult"> </template>
+        <template id="userPage"> </template>
+        <script src="js/mp3.js"></script>
+    </body>
+</html>
