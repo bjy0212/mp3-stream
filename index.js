@@ -10,6 +10,6 @@ app.use(express.static(path.join(__dirname, 'public/')));
 app.use('/', require('./src/router/router.index'));
 app.use('/player', require('./src/router/router.player'));
 
-server.listen(824, _ => {
-    console.log(`* server listening on 0.0.0.0:824`);
+server.listen(10824, _ => {
+    console.log(`* server listening on 0.0.0.0:10824`);
 });

@@ -30,7 +30,9 @@ const Player = {
             //     })
             //     .pipe(res);
 
-            stream.pipe(res);
+            stream.pipe(res).on('error', (e) => {
+                
+            });
 
             // console.log(`piped url ${req.query.url}`);
         } catch (e) {
